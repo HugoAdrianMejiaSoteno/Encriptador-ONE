@@ -1,0 +1,288 @@
+#BotonCopiar, #textoDesencriptado {
+  display: none;
+}
+
+body {
+  background: #f3f5fc;
+}
+
+header {
+  width: 100%; /*El 100% de espacio de su mismam etiqueta, no de la pagina*/
+  height: 65px;
+}
+
+header img {
+  margin-top: 6px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+main {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  color: #757575;
+  padding-top: 10px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box; /*Para que no anada mas espacio al footer cuando agreguemos mas padding sino que mas bien nos permita centrar elementos*/
+}
+
+section {
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.seccion_1 {
+  background-color: #f3f5fc;
+  width: 60%;
+  margin-left: 30px;
+}
+
+.seccion_2 {
+  background-color: hsl(225, 62%, 90%);
+  box-shadow: 1px 1px 10px gray;
+  width: 30%;
+  margin-right: 50px;
+  margin-top: 0;
+}
+
+.contenedor_imagen {
+  width: 100%;
+  height: 60%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contenedor_subtitulo{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contenedor_parrafo {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+.textarea1 {
+  background-color: #f3f5fc;
+  width: 80%;
+  height: 60%;
+  resize: none;
+  display: block; /*Lo ponemos en block pq el textarea viene con inblock*/
+  margin: auto; /*Con esto se centra bien el textarea*/
+  margin-top: 45px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 20px;
+  border: 0; /*Para quitar el borde*/
+  outline: 0; /*Para quitar el borde*/
+}
+.info {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.info p {
+  font-size: 15px;
+}
+
+.vector {
+  margin-right: 5px;
+}
+
+.textarea2 {
+  background-color: hsl(225, 62%, 90%);
+  width: 80%;
+  padding-bottom: 100px;
+  height: 80%;
+  resize: none;
+  display: block; /*Lo ponemos en block pq el textarea viene con inblock*/
+  margin: auto; /*Con esto se centra bien el textarea*/
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 20px;
+  border: 0; /*Para quitar el borde*/
+  outline: 0; /*Para quitar el borde*/
+}
+
+.contenedor_copiar {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.boton_copiar {
+  background-color: hsl(225, 62%, 90%);
+  color: #0a3871;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30%;
+  height: 35px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #0a3871;
+}
+.boton_copiar:hover {
+  background-color: #0a3871;
+  color: #f3f5fc;
+  box-shadow: 1px 1px 10px #0a3871;
+}
+
+.contenedor_botones {
+  text-align: center;
+  margin-top: 20px;
+}
+.boton_encriptar, .boton_desencriptar {
+  width: 30%;
+  height: 40px;
+  border-radius: 15px;
+  border: 0;
+  margin: 15px;
+}
+.boton_encriptar {
+  background-color: #0a3871;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+}
+.boton_encriptar:hover {
+  box-shadow: 1px 1px 10px #0a3871;
+}
+.boton_desencriptar{
+  background-color: #f3f5fc;
+  color: #0a3871;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #0a3871;
+}
+.boton_desencriptar:hover {
+  box-shadow: 1px 1px 10px #0a3871;
+}
+
+@media(max-width:768px){
+  header {
+    height: 40px;
+  }
+  header img {
+    height: 100%;
+    margin-left: 0;
+  }
+  main {
+    display: block;
+    text-align: center;
+    margin: auto;
+    height: 660px;
+  }
+  section {
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+  .seccion_1 {
+    background-color: f3f5fc;
+    width: 85%;
+    height: 50%;
+    margin-left: 30px;
+  }
+  .seccion_2 {
+    background-color: f3f5fc;
+    box-shadow: 1px 1px 10px gray;
+    width: 85%;
+    height: 50%;
+    margin: auto;
+  }
+  
+  .contenedor_imagen {
+    width: 100%;
+    height: 60%;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .contenedor_imagen img {
+    width: 70%;
+    height: 100%;
+  }
+  .contenedor_subtitulo{
+    width: 100%;
+    padding-top: 5px;
+    height: 20%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .contenedor_subtitulo h1 {
+    font-size: 20px;
+  }
+
+  .contenedor_parrafo p {
+    font-size: 13px;
+  }
+
+  footer {
+    padding-top: 40px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box; /*Para que no anada mas espacio al footer cuando agreguemos mas padding sino que mas bien nos permita centrar elementos*/
+  }
+
+  .boton_encriptar, .boton_desencriptar {
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    border: 0;
+    margin: 15px;
+  }
+  .boton_encriptar {
+    background-color: #0a3871;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+  }
+  .boton_desencriptar{
+    background-color: #f3f5fc;
+    color: #0a3871;
+    font-size: 13px;
+    cursor: pointer;
+    border: 2px solid #0a3871;
+  }
+
+  .textarea2 {
+    height: 65%;
+  }
+  .contenedor_copiar {
+    height: 30%;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+  }
+  .boton_copiar {
+    background-color: hsl(225, 62%, 90%);
+    color: #0a3871;
+    font-size: 13px;
+    cursor: pointer;
+    width: 30%;
+    height: 35px;
+    border-radius: 15px;
+    border: 2px solid #0a3871;
+  }
+}
